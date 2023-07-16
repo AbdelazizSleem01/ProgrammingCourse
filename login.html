@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img\coding.png" type="image/x-icon">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <!-- MDB --> 
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css">
+    <!-- semantic-ui-css -->
+	<link rel="stylesheet" href="dist/semantic.css">
+	<link rel="stylesheet" href="dist/semantic.min.css">
+		  
+    <link rel="stylesheet" href="login.css">
+
+    <title>Programming Course</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<!-- Container wrapper -->
+	<div class="container-fluid">
+	  <!-- Toggle button -->
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-mdb-toggle="collapse"
+		data-mdb-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<i class="fas fa-bars"></i>
+	  </button>
+  
+	  <!-- Collapsible wrapper -->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<!-- Navbar brand -->
+		<a class="navbar-brand mt-2 mt-lg-0 ms-5" href="#">
+		  <img
+			src="img\logo1.jpg"
+			height="40"
+			alt="MDB Logo"
+			loading="lazy"
+		  />
+		</a>
+		<!-- Left links -->
+		<ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+		  <li class="nav-item fs-5 ps-5 fw-bold ">
+			<a class="nav-link hover" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<a class="nav-link hover" href="#">About</a>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<div class=" dropdown">
+			  <a
+				class="nav-link dropdown-toggle hover"
+				href="#"
+				id="dropdownMenuLink"
+				data-mdb-toggle="dropdown">
+				Pages
+			  </a>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				<li><a class="dropdown-item" href="#">Course Detail</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Instructors</a></li>
+				<li><a class="dropdown-item" href="#">Testimonial</a></li>
+			  </ul>
+			</div>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<a class="nav-link hover" href="#">Courses</a>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<a class="nav-link hover" href="#">Team</a>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<a class="nav-link hover" href="#">Contact</a>
+		  </li>
+		  <li class="nav-item fs-5 ps-5 fw-bold">
+			<a class="nav-link hover" href="login.html">Login</a>
+		  </li>
+		</ul>
+		<!-- Left links -->
+	  </div>
+  
+	  <!-- Right elements -->
+	  <div class="d-flex align-items-center">
+		<!-- Icon -->
+		<a class="text-reset me-3" href="#">
+		  <i class="fas fa-shopping-cart"></i>
+		</a>
+  
+		<!-- Notifications -->
+		<div class="dropdown">
+		  <a
+			class="text-reset me-3 dropdown-toggle hidden-arrow"
+			href="#"
+			id="navbarDropdownMenuLink"
+			role="button"
+			data-mdb-toggle="dropdown"
+			aria-expanded="false"
+		  >
+			<i class="fas fa-bell"></i>
+			<span class="badge rounded-pill badge-notification bg-danger">1</span>
+		  </a>
+		  <ul
+			class="dropdown-menu dropdown-menu-end"
+			aria-labelledby="navbarDropdownMenuLink"
+		  >
+			<li>
+			  <a class="dropdown-item" href="#">Some news</a>
+			</li>
+			<li>
+			  <a class="dropdown-item" href="#">Another news</a>
+			</li>
+			<li>
+			  <a class="dropdown-item" href="#">Something else here</a>
+			</li>
+		  </ul>
+		</div>
+		<!-- Avatar -->
+		<div class="dropdown">
+		  <a
+			class="dropdown-toggle d-flex align-items-center hidden-arrow"
+			href="#"
+			id="navbarDropdownMenuAvatar"
+			role="button"
+			data-mdb-toggle="dropdown"
+			aria-expanded="false"
+		  >
+			<img
+			  src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+			  class="rounded-circle"
+			  height="25"
+			  alt="Black and White Portrait of a Man"
+			  loading="lazy"
+			/>
+		  </a>
+		  <ul
+			class="dropdown-menu dropdown-menu-end"
+			aria-labelledby="navbarDropdownMenuAvatar"
+		  >
+			<li>
+			  <a class="dropdown-item" href="#">My profile</a>
+			</li>
+			<li>
+			  <a class="dropdown-item" href="#">Settings</a>
+			</li>
+			<li>
+			  <a class="dropdown-item" href="#">Logout</a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+    </nav>
+    <!-- Navbar -->
+
+	<a href="https://front.codes/" class="logo" target="_blank">
+	</a>
+	<section class="section">
+		<div class="container">
+			<div class="row full-height justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+						<input class="checkbox fa-solid fa-arrow-right" type="checkbox" id="reg-log"/>
+						<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<div class="form-group">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
+												<i class="input-icon fa-solid fa-at"></i>											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off" required>  
+												<i class="input-icon fa-solid fa-lock"></i>											</div>
+											<a href="#" class="btn mt-4">submit</a>
+                            				<p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Sign Up</h4>
+											<div class="form-group">
+												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off" required>
+												<i class="input-icon fa-regular fa-user"></i>											
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
+												<i class="input-icon fa-solid fa-at"></i>		
+											</div>									
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off" required>
+												<i class="input-icon fa-solid fa-lock"></i>											
+												<a href="#" class="btn mt-4">submit</a>
+                                            </div>
+										</div>
+				      				</div>
+			      				</div>
+			      				</div>
+			      			</div>
+			       		</div>
+			      	  </div>
+				    </div>
+		      	</div>
+	      	</div>
+	</section>
+
+	<!-- MDB -->
+<script src="node_modules\mdb-ui-kit\js\mdb.min.js"></script>
+</body>
+</html>

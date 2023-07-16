@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img\coding.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+      
+      <!-- animated css -->
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <!-- aos animated -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+      <!-- Google icons -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <!-- MDB --> 
+
+      <link rel="stylesheet" href="bootstrap.css">
+      <link rel="stylesheet" href="bootstrap-grid.css">
+      <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css">
+      <!-- semantic-ui-css -->
+      <link rel="stylesheet" href="dist/semantic.css">
+      <link rel="stylesheet" href="dist/semantic.min.css">
+      
+      <!-- our team -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+      <!-- style-css -->     
+      <link rel="stylesheet" href="style.css"> 
+<title>Programming Course</title>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      onclick="move()"
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0 ms-5" href="#">
+        <img
+          src="img\logo1.jpg"
+          height="40"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5 ">
+        <li class="nav-item fs-5 ps-5 fw-bold ">
+          <a class="nav-link hover" href="#">Home</a>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <a class="nav-link hover" href="#About">About</a>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <div class=" dropdown">
+            <a
+              class="nav-link dropdown-toggle hover"
+              href="#"
+              id="dropdownMenuLink"
+              data-mdb-toggle="dropdown">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#Details">Course Detail</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Instructors</a></li>
+              <li><a class="dropdown-item" href="#ourteam">Ourteam</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <a class="nav-link hover" href="#course">Courses</a>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <a class="nav-link hover" href="#ourteam">Team</a>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <a class="nav-link hover" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item fs-5 ps-5 fw-bold">
+          <a class="nav-link hover" href="login.html">Login</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center right" id="right" >
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="img/my photo.jpeg"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- heading -->
+<section class="container-fluid">
+  <div class="row">
+    <div class="img" id="imge">
+      <h4>Learn From Home</h4>
+      <h1>Education Courses</h1> 
+      <div class=" justify-content-center container1">
+          <div class="col-md-8 ">
+              <div class="input-group mb-3 ">
+                <input type="text" class="form-control input-text " placeholder="Search products...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-warning btn-lg btn-search" type="button"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+          </div>        
+      </div>
+    </div>
+  </div>
+  <!-- About Start -->
+  <div class="container py-5 aaaaa media" id="About">
+      <div class="container py-5">
+          <div class="row">
+              <div class="col-lg-4  mb-5 mb-lg-0" style="min-height: 500px;">
+                  <div class="position-relative h-100">
+                      <img class="position-absolute w-100 h-100 shadow-md" src="img/courses-5.jpg" style="object-fit: cover;" media="(max-width: 1024px)">
+                  </div>
+              </div>
+              <div class="col-lg-7 media-body">
+                  <div class="section-title position-relative mb-4">
+                      <h6 class="d-inline-block position-relative Warning about-head">About Us</h6>
+                      <h1 class="display-4 ">First Choice For Online Education Anywhere</h1>
+                  </div>
+                  <h4>Online learning has become one of the most popular ways to acquire new skills and develop capabilities. The internet provides a plethora of resources for learning various skills, including languages, programming, digital marketing, design, business, and much more.
+                    Among the popular websites that offer online courses is Coursera. Coursera is an online learning platform that partners with top universities and organizations worldwide to offer courses, specializations, and degrees. The platform offers a wide range of courses, from computer science to social sciences, from data science to business, and from arts to health.
+                    
+                    Coursera's courses are designed by top instructors and are available in multiple languages. The courses are delivered online, allowing learners to study at their own pace and on their own schedule. Coursera also offers a flexible payment system, allowing learners to pay for courses individually or to subscribe to a specialization or degree program.
+                    
+                    One of the unique features of Coursera is its emphasis on hands-on learning. Many of the courses include practical projects and assignments, giving learners the opportunity to apply what they've learned and build a portfolio of work to showcase their skills to employers.</p>
+                    <div class="col-sm-3">
+                    <a href="#" class="btn btn-lg">Get Start</a>
+                    </div>
+      
+              <div class="container media-counter ">
+                <div class="row">
+                  <div class="four col-md-3 col-sm-6 col-12 ">
+                    <div class="counter-box colored">
+                      <i class="fa-solid fa-thumbs-up"></i>
+                      <span class="counter">2147</span>
+                      <p>Happy Customers</p>
+                    </div>
+                  </div>
+                  <div class="four col-md-3 col-sm-6 col-12">
+                    <div class="counter-box bg-secondary">
+                      <i class="fa-solid fa-user-group"></i>
+                      <span class="counter">3275</span>
+                      <p>Registered Members</p>
+                    </div>
+                  </div>
+                  <div class="four col-md-3 col-sm-6 col-12">
+                    <div class="counter-box bg-success">
+                      <span class="material-symbols-outlined">menu_book</span>
+                      <span class="counter">289</span>
+                      <p>Available Courses</p>
+                    </div>
+                  </div>
+                  <div class="four col-md-3 col-sm-6 col-12">
+                    <div class="counter-box bg-primary">
+                      <i class="fa  fa-user"></i>
+                      <span class="counter">1563</span>
+                      <p>Saved Trees</p>
+                    </div>
+                  </div>
+                </div>	
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <!-- About End -->
+
+</section>
+
+<!-- line -->
+<div class="container line4"></div>
+
+<!-- courses -->
+<section class="galliry" id="course">
+<div class="container-fluid">
+  <div class="px-lg-5">
+    <!-- For demo purpose -->
+    <div class="row py-5 galliry-head">
+      <div class="col-lg-12 mx-auto">
+        <div class="text-white p-5 shadow-sm rounded banner ">
+          <h1 class="display-4">Our Courses</h1>
+          <p class="lead">Courses video  snippet.</p>
+          <p class="lead">Snippet by <a href="#" class="text-reset"> edu Courses</a>, Images by <a href="#" class="text-reset">Unsplash</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <div class="row galliry-cards">
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\js.jpg" alt="" class="img-fluid card-img-top h-160 " >
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Java Script Course</a></h5>
+            <p class="small text-muted mb-0">"JavaScript is a high-level programming language that is commonly"</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+              <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\C.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">C Language Course  </a></h5>
+            <p class="small text-muted mb-0">"C is a high-level programming language that is widely used for developing operating"</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+              <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class=" mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\Python.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Python</a></h5>
+            <p class="small text-muted mb-0">"Python is widely used for web development, scientific computing, data analysis, artificial" </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\photo 6.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">C++</a></h5>
+            <p class="small text-muted mb-0">"C++ is a high-level programming language that is an extension of the C language"</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+              <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\java.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Java</a></h5>
+            <p class="small text-muted mb-0">"Java is a high-level, object-oriented programming language that is designed"</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+              <div class="badge badge-primary px-3 rounded-pill font-weight-normal">New</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\photo 1.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Online Course</a></h5>
+            <p class="small text-muted mb-0">"Online course produce ahight quality of couses for beginner developer"</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\photo 2.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">C#</a></h5>
+            <p class="small text-muted mb-0"> "C# is an open-source, interpreted language that is designed for creating dynamic web"  </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+              <div class="badge badge-info px-3 rounded-pill font-weight-normal">Hot</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\python Beginner.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Python for beginner</a></h5>
+            <p class="small text-muted mb-0">"Python is widely used for web development, scientific computing, data analysis, artificial" </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\how to code.png" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Learn to write code</a></h5>
+            <p class="small text-muted mb-0">Learn how to write code is the essintial step for beginner to start programming </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+              <div class="badge badge-danger px-3 rounded-pill font-weight-normal">New</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\web development.jpg" alt="" class="img-fluid card-img-top h-160 " style="height:160px;">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">HTML-CSS3-JS</a></h5>
+            <p class="small text-muted mb-0"> HTML to write word in your web and style it by CSS and dynamic with JS </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+              <div class="badge badge-primary px-3 rounded-pill font-weight-normal">Trend</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\php.jpg" alt="" class="img-fluid card-img-top h-160" >
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">PHP</a></h5>
+            <p class="small text-muted mb-0"> "PHP is an open-source, interpreted language that is designed for creating dynamic web"  </p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white">Featured</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <!-- Gallery item -->
+      <div class="mb-4 sh-b hovereffect">
+        <div class="bg-white rounded shadow-sm img-responsive"><img src="img\front end.jpg" alt="" class="img-fluid card-img-top h-160">
+          <div class="overlay">
+            <i class="fa-regular fa-heart"></i>
+            <a class="info btn btn-dark" href="#">Show more <h3 class="fa-solid fa-caret-up fa-rotate-90"></h3></a>
+          </div>
+          <div class="p-4">
+            <h5> <a href="#" class="text-dark">Programming Language</a></h5>
+            <p class="small text-muted mb-0">Programming Language is language use to make any code to programm web or app</p>
+            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPEG</span></p>
+              <div class="badge badge-success px-3 rounded-pill font-weight-normal">Hot</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+    </div>
+    <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show me more . . . </a></div>
+  </div>
+</div>
+</section>
+
+<section>
+  <!-- horizontal progress bars -->
+    <div class="progress-bar horizontal top"></div>
+    <div class="progress-bar horizontal bottom"></div>
+<!-- vertical progress bars -->
+    <div class="progress-bar vertical left"></div>
+    <div class="progress-bar vertical right"></div>
+    <div class="scroll"></div>
+</section>
+
+<!-- line -->
+<div class="container line3" id="ourteam"></div>
+
+<!-- our team -->
+<section class="container Ourteam-2">
+  <div class="row py-5">
+    <div class="col-lg-12 mx-auto">
+      <div class="text-white p-5 shadow-sm rounded banner2 ">
+        <h1 class="display-4">Our Team  </h1>
+        <p class="lead">"A team at the highest level"</p>
+        <p class="lead">Snippet by <a href="#" class="text-reset"> edu Courses</a>, Images by <a href="#" class="text-reset">Unsplash</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container Ourteam">
+      <div class="row">
+          <div class="col-md-12">
+              <div id="testimonial-slider" class="owl-carousel">
+                 <div class="testimonial">
+                     <div class="pic">
+                         <img src="img/HANDASA.jpg" style="height: 100% ;">
+                     </div>
+                      <p class="description">
+        A professional programmer with extensive experience in the field of programming and a large following on social media platforms, offering courses in programming and proficient in various languages such as C, JavaScript, Python, HTML, and CSS. 
+                      </p>
+                     <div class="testimonial-profile">
+                        <h3 class="title">Abdulrahman ALaa-</h3>
+                        <span class="post">Web Developer</span>
+                     </div>
+                  </div>
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/my photo.jpeg" style="height: 100% ; width: 110px;">
+                      </div>
+                      <p class="description">
+                          He is a person who writes code to create software programs. They are skilled in programming languages such as JS , HTML , CSS and many others
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title">Abdelaziz Sleem-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+   
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/team-2.jpg">
+                      </div>
+                      <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title">Kristina-</h3>
+                          <span class="post">Web Designer</span>
+                      </div>
+                  </div>
+   
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/testimonial-2.jpg">
+                      </div>
+                      <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title">Steve Thomas-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+   
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/team 1.jpg" style="height: 100%;">
+                      </div>
+                      <p class="description">
+                        We  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title">poullino-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+   
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/team3.jpg" style="height: 100%;">
+                      </div>
+                      <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title"> Thomas march-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/team 5.jpg" style="height: 100%;">
+                      </div>
+                      <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title"> Mohamed Elmasry-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+                  <div class="testimonial">
+                      <div class="pic">
+                          <img src="img/team 6.jpg" style="height: 100%;">
+                      </div>
+                      <p class="description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi dolorum earum fugiat, fugit hic id, ipsum laborum minus nostrum numquam perspiciatis saepe velit.
+                      </p>
+                      <div class="testimonial-profile">
+                          <h3 class="title">Steve Thomas-</h3>
+                          <span class="post">Web Developer</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <div class="container line5" ></div>
+
+<!-- some comment -->
+
+
+<section class="container Ourteam-3">
+  <div class="row py-5">
+    <div class="col-lg-12 mx-auto">
+      <div class="text-white p-5 shadow-sm rounded banner2 ">
+        <h1 class="display-4">Comments  </h1>
+        <p class="lead">"Some Comment From Our Client"</p>
+        <p class="lead">Snippet by <a href="#" class="text-reset"> edu Courses</a>, comment by <a href="#" class="text-reset">Unsplash</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container d-flex justify-content-center mt-100 mb-100 comments">
+  <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Recent Comments</h4>
+                                <h6 class="card-subtitle">Latest Comments section by users</h6> </div>
+                            <div class="comment-widgets m-b-20">
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><span class="round"><img src="img/team 1.jpg" alt="user" width="50"></span></div>
+                                    <div class="comment-text w-100">
+                                        <h5>Samso Nagaro</h5>
+                                        <div class="comment-footer">
+                                            <span class="date">April 14, 2019</span>
+                                            <span class="label label-info">Pending</span> <span class="action-icons">
+                                                    <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-rotate-right"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-heart"></i></a>
+                                                </span>
+                                        </div>
+                                        <p class="m-b-5 m-t-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row comment-row ">
+                                    <div class="p-2"><span class="round"><img src="img/team 5.jpg" alt="user" width="50"></span></div>
+                                    <div class="comment-text active w-100">
+                                        <h5>Jonty Andrews</h5>
+                                        <div class="comment-footer">
+                                            <span class="date">March 13, 2020</span>
+                                            <span class="label label-success">Approved</span> <span class="action-icons active">
+                                                    <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-rotate-right text-success"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-heart text-danger"></i></a>
+                                                </span>
+                                        </div>
+                                        <p class="m-b-5 m-t-10">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,s</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><span class="round"><img src="img/team3.jpg" alt="user" width="50"></span></div>
+                                    <div class="comment-text w-100">
+                                        <h5>Sarah Tim</h5>
+                                        <div class="comment-footer">
+                                            <span class="date">Jan 20, 2020</span>
+                                            <span class="label label-danger">Rejected</span> <span class="action-icons">
+                                                    <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-rotate-right"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-heart"></i></a>
+                                                </span>
+                                        </div>
+                                        <p class="m-b-5 m-t-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row comment-row">
+                                    <div class="p-2"><span class="round"><img src="img/team 6.jpg" alt="user" width="50"></span></div>
+                                    <div class="comment-text w-100">
+                                        <h5>Samso Nagaro</h5>
+                                        <div class="comment-footer">
+                                            <span class="date">March 20, 2020</span>
+                                            <span class="label label-info">Pending</span> <span class="action-icons">
+                                                    <a href="#" data-abc="true"><i class="fa fa-pencil"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-rotate-right"></i></a>
+                                                    <a href="#" data-abc="true"><i class="fa fa-heart"></i></a>
+                                                </span>
+                                        </div>
+                                        <p class="m-b-5 m-t-10 ">It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                                    </div>
+                                </div>
+                            </div>
+            </div>
+      </div>
+  </div>
+</section>
+
+<!-- line -->
+<div class="container line2"  id="Details"></div>
+
+<!-- details -->
+<section class="container details">
+  <div class="container">
+    <div class="row "> 
+      <div class="col-md-6 col-sm-12  head">
+        <h2>Details</h2>
+        <p>Some Details for our courses</p>
+      </div>
+
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-js"></i></div>
+                        <h3 class="title">Java Script</h3>
+                        <p class="description">
+                          JavaScript is known for its ability to add interactivity and dynamic behavior to websites. It can be used on both the client-side and server-side of web development. JavaScript is a versatile language that is capable of creating complex applications, as well as simple scripts.                        </p>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-python"></i></div>    
+                        <h3 class="title">python</h3>
+                        <p class="description">
+                          Python is a high-level programming language that was developed in 1991 by Guido van Rossum. It is used in a variety of applications and fields, including scientific programming, data analysis, web development, artificial intelligence, and more. </p>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-php"></i></div>    
+                        <h3 class="title">PHP</h3>
+                        <p class="description">
+                          PHP is a server-side scripting language that is used for web development. It was first released in 1995 and has since become one of the most popular languages for creating dynamic web pages and web applications.</p>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-java"></i></div>    
+                        <h3 class="title">java</h3>
+                        <p class="description">
+                          Java is also known for its robustness and reliability. Its strong typing and built-in memory management help to prevent errors and make it easier to create stable applications. Additionally, Java has a large and active community of developers who contribute to its libraries and frameworks, making it easier to develop complex applications.</p>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-html5"></i></div>    
+                        <h3 class="title">html</h3>
+                        <p class="description">
+                          HTML is used to create the structure and content of web pages. It uses tags and attributes to define the various elements on a web page, such as headings, paragraphs, images, links, and more. By using HTML, web developers can create pages that are well-structured, accessible, and easy to navigate.</p>
+                    </a>
+                </div>
+                <div class="timeline">
+                    <a href="#" class="timeline-content">
+                        <div class="timeline-icon"><i class="fa-brands fa-css3-alt"></i></div>    
+                        <h3 class="title">css</h3>
+                        <p class="description">
+                          CSS is used to style the content on a web page, including the layout, colors, fonts, and spacing. It works by separating the presentation of a web page from its content, which makes it easier to maintain and update the design of a website.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- line -->
+<div class="container line" id="contact"></div>
+
+<!--==== contact section ===== -->
+<section class="container Contact" >
+  <div class="col-md-6 col-sm-12 head">
+    <h2 class="contact-h">Contact Us</h2>
+    <p>Contact us to help you for any thing</p>
+  </div>
+  <div class="contact__wrapper shadow-lg mt-n9">
+      <div class="row no-gutters">
+          <div class="col-lg-5 contact-info__wrapper gradient-brand-color p-5 order-lg-2">
+              <h3 class="color--white mb-5">Get in Touch</h3>
+  
+              <ul class="contact-info__list list-style--none position-relative z-index-101">
+                  <li class="mb-4 pl-4">
+                      <span class="position-absolute"><i class="fas fa-envelope"></i></span> support@bootdey.com
+                  </li>
+                  <li class="mb-4 pl-4">
+                      <span class="position-absolute"><i class="fas fa-phone"></i></span> (+20) -010-0748-8071
+                  </li>
+                  <li class="mb-4 pl-4">
+                      <span class="position-absolute"><i class="fas fa-map-marker-alt"></i></span>    15 Eltahrer Street
+                      <br/>Benha,
+                      <br/>ElQaluopia , EGYPT
+  
+                      <div class="mt-3">
+                          <a href="https://www.google.com/maps" target="_blank" class="text-link link--right-icon text-white">Get directions <i class="link__icon fa fa-directions"></i></a>
+                      </div>
+                  </li>
+              </ul>
+  
+              <figure class="figure position-absolute m-0 opacity-06 z-index-100" style="bottom:0; right: 10px">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="444px" height="626px">
+                      <defs>
+                          <linearGradient id="PSgrad_1" x1="0%" x2="81.915%" y1="57.358%" y2="0%">
+                              <stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity="1"></stop>
+                              <stop offset="100%" stop-color="rgb(0,54,207)" stop-opacity="0"></stop>
+                          </linearGradient>
+  
+                      </defs>
+                      <path fill-rule="evenodd" opacity="0.302" fill="rgb(72, 155, 248)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                      <path fill="url(#PSgrad_1)" d="M816.210,-41.714 L968.999,111.158 L-197.210,1277.998 L-349.998,1125.127 L816.210,-41.714 Z"></path>
+                  </svg>
+              </figure>
+          </div>
+  
+          <div class="col-lg-7 contact-form__wrapper p-5 order-lg-1">
+              <form action="#" class="contact-form form-validate" novalidate="novalidate">
+                  <div class="row">
+                      <div class="col-sm-6 mb-3">
+                          <div class="form-group">
+                              <label class="required-field" for="firstName">First Name</label>
+                              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Abdelaziz...">
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-6 mb-3">
+                          <div class="form-group">
+                              <label for="lastName">Last Name</label>
+                              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Sleem...">
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-6 mb-3">
+                          <div class="form-group">
+                              <label class="required-field" for="email">Email</label>
+                              <input type="text" class="form-control" id="email" name="email" placeholder="zezo.apple@seed.com....">
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-6 mb-3">
+                          <div class="form-group">
+                              <label for="phone">Phone Number</label>
+                              <input type="tel" class="form-control" id="phone" name="phone" placeholder="01007488071 ....">
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-12 mb-3">
+                          <div class="form-group">
+                              <label class="required-field" for="message">How can we help?</label>
+                              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....."></textarea>
+                          </div>
+                      </div>
+  
+                      <div class="col-sm-12 mb-3">
+                          <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                      </div>
+  
+                  </div>
+              </form>
+          </div>
+          <!-- End Contact Form Wrapper -->
+  
+      </div>
+  </div>
+</section>
+<!-- ======== footer ====== -->
+<footer class="Footer bg-color">
+  <div class="container-fluid">
+      <div class="footer-top">
+          <div class="row">
+              <div class="col-md-6 col-lg-3 about-footer">
+                  <h3>Online Course For Programming</h3>
+                  <ul>
+                      <li><a href="tel:(010) 1234 4321"><i class="fas fa-phone fa-flip-horizontal"></i>(+20)  01007488071 </a></li>
+                      <li><i class="fas fa-map-marker-alt"></i>
+                        15 Eltahrer Street
+                          <br/>Benha,
+                          <br/>ElQaluopia , EGYPT
+                      </li>
+                  </ul>
+                  <a href="" class="btn red-btn">Book Now</a>
+              </div>
+              <div class="col-md-6 col-lg-2 page-more-info">
+                  <div class="footer-title">
+                      <h4>Page links</h4>
+                  </div>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#About">About</a></li>
+                      <li><a href="#ourteam">Our Team</a></li>
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-lg-3 page-more-info">
+                  <div class="footer-title">
+                      <h4>More Info</h4>
+                  </div>
+                  <ul>
+                      <li><a href="#">Angular</a></li>
+                      <li><a href="#">React</a></li>
+                      <li><a href="#">Vue.Js</a></li>
+                      <li><a href="#">jQuery</a></li>
+                      <li><a href="#">Node.Js</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-6 col-lg-4 open-hours">
+                  <div class="footer-title2" >
+                      <h4>Course Schedule</h4>
+                      <ul class="footer-social" id="icons">
+                          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                          <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                          <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                          <li><a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+
+                      </ul>
+                  </div>
+                  <table class="table">
+                      <tbody>
+                          <tr>
+                              <td><i class="far fa-clock"></i>Monday </td>
+                              <td class="time">9:00am - 5:00pm</td>
+                          </tr>
+                          <tr>
+                              <td><i class="far fa-clock"></i>Thursday</td>
+                              <td  class="time">9:00am - 4:00pm</td>
+                          </tr>
+                          <tr>
+                              <td><i class="far fa-clock"></i>Sturday</td>
+                              <td  class="time">9:00am - 1:30pm</td>
+                          </tr>
+                          <tr>
+                              <td><i class="far fa-clock"></i>Sunday</td>
+                              <td  class="time">9:30am - 12:00pm</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <hr class="hr1">
+                  <div class="footer-logo">
+
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td><img class="foot-img" src="img/js-logo.webp"></td>
+                              <td><img class="foot-img" src="img/python-logo.png"></td>
+                              <td><img class="foot-img" src="img/C_Logo.png"></td>
+                              <td><img class="foot-img" src="img/php-logo.png"></td>
+                              <td><img class="foot-img" src="img/pngwing.com.png"></td>
+                          </tr>    
+                      </tbody>
+                  </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr class="hr2">
+      <div class="footer-bottom">
+          <div class="row">
+              <div class="col-sm-4">
+                  <a href="">Privacy policy</a>
+              </div>
+              <div class="col-sm-8">
+                  <p>Online Course For Programming @ 2023 All rights reserved</p>
+              </div>
+          </div>
+      </div>
+    </div>  
+</footer>
+
+
+<!-- MDB -->
+<script src="node_modules\mdb-ui-kit\js\mdb.min.js"></script>
+<!-- animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="main.js"></script>
+</body>
+</html>

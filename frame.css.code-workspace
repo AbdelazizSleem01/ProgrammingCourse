@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/Semantic-UI-master/dist"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frame.css",
+		"islamic.time": 30
+	}
+}
