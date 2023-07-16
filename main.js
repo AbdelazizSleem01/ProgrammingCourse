@@ -68,10 +68,12 @@ function move() {
     element.style.position = 'relative';
     element.style.left = '40px';
     heading.style.visibility = 'hidden';
+    element.style.visibility = 'hidden';
     isMoved = true;
     }    
     else {
     heading.style.visibility = 'visible';
+    element.style.visibility = 'visible';
     element.style.position = 'static';
     element.style.top = 'auto';
     element.style.left = 'auto';
