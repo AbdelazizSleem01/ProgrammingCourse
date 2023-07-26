@@ -75,10 +75,12 @@
     background-color: #f8c146;
 }
 
-.input-text:focus{
+
+.btn-search{
     box-shadow: 0px 0px 0px;
     border-color:#f8c146;
-    outline:0px;
+    outline-color: #f8c146;
+    
 }
 
 .form-control {
