@@ -19,9 +19,6 @@
       <!-- Google icons -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <!-- MDB --> 
-
-      <link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css">
       <!-- semantic-ui-css -->
       <link rel="stylesheet" href="dist/semantic.css">
@@ -185,17 +182,15 @@
 <!-- heading -->
 <section class="container-fluid">
   <div class="row">
-    <div class="img" id="imge">
-      <h4>Learn From Home</h4>
-      <h1>Education Courses</h1> 
-      <div class=" justify-content-center container1">
-          <div class="col-md-8 ">
-              <div class="input-group mb-3 ">
-                <input type="text" class="form-control input-text " placeholder="Search products...." aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-warning btn-lg btn-search" type="button"><i class="fa fa-search"></i></button>
-                </div>
-              </div>
+    <div class="img img-fluid" id="imge">
+      <h4 class="text-center ">Learn From Home</h4>
+      <h1 class="text-center">Education Courses</h1> 
+      <div class=" container1">
+          <div class="col-sm-12 ">
+            <div class="search-box">
+              <button class="btn-search"><i class="fas fa-search"></i></button>
+              <input type="text" class="input-search" placeholder="Type to Search...">
+            </div>
           </div>        
       </div>
     </div>
@@ -206,7 +201,7 @@
           <div class="row">
               <div class="col-lg-4  mb-5 mb-lg-0" style="min-height: 500px;">
                   <div class="position-relative h-100">
-                      <img class="position-absolute img-thumbnail w-100 h-100 shadow-md" src="img/courses-5.jpg" style="object-fit: cover;" media="(max-width: 1024px)">
+                      <img class="position-absolute img-fluid  shadow-md" src="img/courses-5.jpg" style="object-fit: cover;" >
                   </div>
               </div>
               <div class="col-lg-7 media-body">
@@ -223,41 +218,40 @@
                     <div class="col-sm-3">
                     <a href="#" class="btn btn-lg">Get Start</a>
                     </div>
-      
-              <div class="container media-counter ">
-                <div class="row">
-                  <div class="four col-md-3 col-sm-6 col-12 ">
-                    <div class="counter-box colored">
-                      <i class="fa-solid fa-thumbs-up"></i>
-                      <span class="counter">2147</span>
-                      <p>Happy Customers</p>
+                    <div class="container media-counter ">
+                      <div class="row">
+                        <div class="four col-md-3 col-sm-6 col-12 ">
+                          <div class="counter-box colored">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span class="counter">2147</span>
+                            <p>Happy Customers</p>
+                          </div>
+                        </div>
+                        <div class="four col-md-3 col-sm-6 col-12">
+                          <div class="counter-box bg-secondary">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span class="counter">3275</span>
+                            <p>Registered Members</p>
+                          </div>
+                        </div>
+                        <div class="four col-md-3 col-sm-6 col-12">
+                          <div class="counter-box bg-success">
+                            <span class="material-symbols-outlined">menu_book</span>
+                            <span class="counter">289</span>
+                            <p>Available Courses</p>
+                          </div>
+                        </div>
+                        <div class="four col-md-3 col-sm-6 col-12">
+                          <div class="counter-box bg-primary">
+                            <i class="fa  fa-user"></i>
+                            <span class="counter">1563</span>
+                            <p>Saved Trees</p>
+                          </div>
+                        </div>
+                      </div>	
                     </div>
-                  </div>
-                  <div class="four col-md-3 col-sm-6 col-12">
-                    <div class="counter-box bg-secondary">
-                      <i class="fa-solid fa-user-group"></i>
-                      <span class="counter">3275</span>
-                      <p>Registered Members</p>
-                    </div>
-                  </div>
-                  <div class="four col-md-3 col-sm-6 col-12">
-                    <div class="counter-box bg-success">
-                      <span class="material-symbols-outlined">menu_book</span>
-                      <span class="counter">289</span>
-                      <p>Available Courses</p>
-                    </div>
-                  </div>
-                  <div class="four col-md-3 col-sm-6 col-12">
-                    <div class="counter-box bg-primary">
-                      <i class="fa  fa-user"></i>
-                      <span class="counter">1563</span>
-                      <p>Saved Trees</p>
-                    </div>
-                  </div>
-                </div>	
-              </div>
-            </div>
-        </div>
+                </div>
+          </div>
       </div>
   </div>
   <!-- About End -->
@@ -758,8 +752,7 @@
         <h2>Details</h2>
         <p>Some Details for our courses</p>
       </div>
-
-        <div class="col-md-12 bg-danger rounded-4">
+        <div class="col-md-12  rounded-4">
             <div class="main-timeline">
                 <div class="timeline">
                     <a href="#" class="timeline-content">
